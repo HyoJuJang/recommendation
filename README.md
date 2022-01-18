@@ -34,3 +34,20 @@ https://www.csie.ntu.edu.tw/~b97053/paper/Rendle2010FM.pdf
     = feature interaction weights는 두 feature의 latent factor space embeddings의 내적으로 나타남
     -> 추정해야할 모수를 대폭 줄여줌
     
+https://machinelearningmastery.com/how-to-choose-loss-functions-when-training-deep-learning-neural-networks/
+https://www.jefkine.com/recsys/2017/03/27/factorization-machines/
+[Optimaization]
+stochastic gradient descent(SGD)
+	- Gradient descent : Batch Gradient Descent, SGD, Mini Batch GD
+		- SGD가 많이 쓰이는데, step size와 같은 모수들 직접 tune해야 함
+		이 tuning 자동으로 하게 하는 것 중 가장 성공적인 스키마 = AdaGrad
+		좀 더 informative gradient-based learning임
+			- AdaGrad도 두 가지 버전 : Diagonal / Full AdaGrad
+alternating least squares(ALS)
+Markov Chain Monte Carlo(MCMC)
+
+[Loss function]
+for classification : logit or hinge loss
+	- binary cross-entropy loss, hinge loss, squared hinge loss, multi-class , ...
+for regression : least square loss with L2 regularization
+	- mean squared, mean squared logarithmic, mean absolute error

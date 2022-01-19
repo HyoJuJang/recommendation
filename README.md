@@ -36,6 +36,7 @@ https://www.csie.ntu.edu.tw/~b97053/paper/Rendle2010FM.pdf
     
 https://machinelearningmastery.com/how-to-choose-loss-functions-when-training-deep-learning-neural-networks/
 https://www.jefkine.com/recsys/2017/03/27/factorization-machines/
+
 [Optimaization]
 stochastic gradient descent(SGD)
 	- Gradient descent : Batch Gradient Descent, SGD, Mini Batch GD
@@ -51,3 +52,7 @@ for classification : logit or hinge loss
 	- binary cross-entropy loss, hinge loss, squared hinge loss, multi-class , ...
 for regression : least square loss with L2 regularization
 	- mean squared, mean squared logarithmic, mean absolute error
+	
+[Parameters]
+latent factors 수(k) :  With a higher k, you have more specific categories.
+learning rate(SGD)

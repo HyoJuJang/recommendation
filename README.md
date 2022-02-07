@@ -36,6 +36,7 @@ https://www.csie.ntu.edu.tw/~b97053/paper/Rendle2010FM.pdf
     
 https://machinelearningmastery.com/how-to-choose-loss-functions-when-training-deep-learning-neural-networks/
 https://www.jefkine.com/recsys/2017/03/27/factorization-machines/
+https://machinelearningmastery.com/adam-optimization-algorithm-for-deep-learning/
 
 [Optimaization]
 stochastic gradient descent(SGD)
@@ -44,8 +45,20 @@ stochastic gradient descent(SGD)
 		이 tuning 자동으로 하게 하는 것 중 가장 성공적인 스키마 = AdaGrad
 		좀 더 informative gradient-based learning임
 			- AdaGrad도 두 가지 버전 : Diagonal / Full AdaGrad
-alternating least squares(ALS)
-Markov Chain Monte Carlo(MCMC)
+	- Adam : classical SGD 대신 쓸 수 있는 optimization 알고리즘(https://arxiv.org/abs/1412.6980)
+		- 직관적이고 효율적이며 noisy/sparse gradients 문제에도 쓰일 수 있음
+		- 하이퍼파라미터가 직관적으로 해석될 수 있으며 튜닝이 거의 필요 없음
+		- AdaGrad + RMSProp의 장점을 섞어놓음
+		- default parameters recommended(Jason Brownlee on July 3, 2017)
+		TensorFlow: learning_rate=0.001, beta1=0.9, beta2=0.999, epsilon=1e-08.
+		Keras: lr=0.001, beta_1=0.9, beta_2=0.999, epsilon=1e-08, decay=0.0.
+		Blocks: learning_rate=0.002, beta1=0.9, beta2=0.999, epsilon=1e-08, decay_factor=1.
+		Lasagne: learning_rate=0.001, beta1=0.9, beta2=0.999, epsilon=1e-08
+		Caffe: learning_rate=0.001, beta1=0.9, beta2=0.999, epsilon=1e-08
+		MxNet: learning_rate=0.001, beta1=0.9, beta2=0.999, epsilon=1e-8
+		Torch: learning_rate=0.001, beta1=0.9, beta2=0.999, epsilon=1e-8
+		alternating least squares(ALS)
+		Markov Chain Monte Carlo(MCMC)
 
 [Loss function]
 for classification : logit or hinge loss

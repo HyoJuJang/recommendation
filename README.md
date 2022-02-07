@@ -39,7 +39,7 @@ https://www.jefkine.com/recsys/2017/03/27/factorization-machines/
 https://machinelearningmastery.com/adam-optimization-algorithm-for-deep-learning/
 
 [Optimaization]
-stochastic gradient descent(SGD)
+- stochastic gradient descent(SGD)
 	- Gradient descent : Batch Gradient Descent, SGD, Mini Batch GD
 		- SGD가 많이 쓰이는데, step size와 같은 모수들 직접 tune해야 함
 		이 tuning 자동으로 하게 하는 것 중 가장 성공적인 스키마 = AdaGrad
